@@ -18,38 +18,34 @@
            CSS VARIABLES & RESET
            ============================================ */
         :root {
-            /* Dark Mode Colors (Default) */
-            --charcoal: #171814;
-            --sand: #D8C29D;
-            --ivory: #F4F0E7;
-            --olive: #68704A;
-            --gold: #C9A96E;
-            --gold-light: rgba(201, 169, 110, 0.15);
-            
-            --primary-dark: #0a0a08;
-            --primary-gold: #C8A96E;
-            --primary-gold-dark: #B8954A;
-            --primary-cream: #F5F0E6;
-            --primary-warm: #D4C5A0;
-            
-            --bg-primary: #171814;
-            --bg-secondary: #1a1b17;
-            --bg-card: rgba(23, 24, 20, 0.6);
-            --bg-input: rgba(23, 24, 20, 0.6);
-            --text-primary: #F4F0E7;
-            --text-secondary: rgba(244, 240, 231, 0.9);
-            --text-muted: rgba(244, 240, 231, 0.6);
-            --border-color: rgba(216, 194, 157, 0.08);
-            --border-light: rgba(216, 194, 157, 0.1);
-            --overlay-dark: rgba(23, 24, 20, 0.7);
-            --overlay-light: rgba(23, 24, 20, 0.3);
-            --bg-image-overlay: rgba(23, 24, 20, 0.6);
-            
-            /* Footer Colors - Dark Mode */
-            --footer-bg: #0f100e;
-            --footer-text: rgba(244, 240, 231, 0.4);
-            --footer-text-hover: #F4F0E7;
-            --footer-border: rgba(216, 194, 157, 0.05);
+            /* Modern safari palette */
+            --charcoal: #111111;
+            --sand: #E8751A;
+            --ivory: #111111;
+            --olive: #3F6B3A;
+            --gold: #D4A72C;
+            --gold-light: rgba(212, 167, 44, 0.16);
+            --primary-dark: #111111;
+            --primary-gold: #E8751A;
+            --primary-gold-dark: #B9570D;
+            --primary-cream: #FFFFFF;
+            --primary-warm: #333333;
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #FFFFFF;
+            --bg-card: #FFFFFF;
+            --bg-input: #FFFFFF;
+            --text-primary: #111111;
+            --text-secondary: #333333;
+            --text-muted: #5F6360;
+            --border-color: #D9DED8;
+            --border-light: #C9D0C8;
+            --overlay-dark: rgba(17, 17, 17, 0.72);
+            --overlay-light: rgba(17, 17, 17, 0.24);
+            --bg-image-overlay: rgba(17, 17, 17, 0.58);
+            --footer-bg: #111111;
+            --footer-text: rgba(255, 255, 255, 0.72);
+            --footer-text-hover: #FFFFFF;
+            --footer-border: rgba(212, 167, 44, 0.28);
             
             /* ==========================================
                TYPOGRAPHY SYSTEM
@@ -90,25 +86,44 @@
            ============================================ */
         [data-theme="light"] {
             --bg-primary: #FFFFFF;
-            --bg-secondary: #F0F0F0;
+            --bg-secondary: #FFFFFF;
             --bg-card: #FFFFFF;
-            --bg-input: #F0F0F0;
-            --text-primary: #0A0A0A;
-            --text-secondary: rgba(10, 10, 10, 0.9);
-            --text-muted: rgba(10, 10, 10, 0.6);
-            --border-color: rgba(10, 10, 10, 0.08);
-            --border-light: rgba(10, 10, 10, 0.12);
-            --charcoal: #FFFFFF;
-            --ivory: #0A0A0A;
-            --overlay-dark: rgba(255, 255, 255, 0.85);
-            --overlay-light: rgba(255, 255, 255, 0.4);
-            --bg-image-overlay: rgba(255, 255, 255, 0.7);
-            
-            /* Footer Colors - Light Mode */
-            --footer-bg: #E8E8E8;
-            --footer-text: rgba(10, 10, 10, 0.6);
-            --footer-text-hover: #0A0A0A;
-            --footer-border: rgba(10, 10, 10, 0.08);
+            --bg-input: #FFFFFF;
+            --text-primary: #111111;
+            --text-secondary: #333333;
+            --text-muted: #5F6360;
+            --border-color: #D9DED8;
+            --border-light: #C9D0C8;
+            --charcoal: #111111;
+            --ivory: #111111;
+            --overlay-dark: rgba(17, 17, 17, 0.72);
+            --overlay-light: rgba(17, 17, 17, 0.24);
+            --bg-image-overlay: rgba(17, 17, 17, 0.58);
+            --footer-bg: #111111;
+            --footer-text: rgba(255, 255, 255, 0.72);
+            --footer-text-hover: #FFFFFF;
+            --footer-border: rgba(212, 167, 44, 0.28);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: #171814;
+            --bg-secondary: #1F211C;
+            --bg-card: #20221D;
+            --bg-input: #20221D;
+            --text-primary: #F4F0E7;
+            --text-secondary: rgba(244, 240, 231, 0.9);
+            --text-muted: rgba(244, 240, 231, 0.66);
+            --border-color: rgba(216, 194, 157, 0.14);
+            --border-light: rgba(216, 194, 157, 0.22);
+            --charcoal: #171814;
+            --ivory: #F4F0E7;
+            --overlay-dark: rgba(23, 24, 20, 0.7);
+            --overlay-light: rgba(23, 24, 20, 0.3);
+            --bg-image-overlay: rgba(23, 24, 20, 0.6);
+            --footer-bg: #0F100E;
+            --footer-text: rgba(244, 240, 231, 0.66);
+            --footer-text-hover: #F4F0E7;
+            --footer-border: rgba(216, 194, 157, 0.12);
         }
 
         * {
@@ -264,7 +279,7 @@
             font-size: 0.7rem;
             letter-spacing: var(--letter-spacing-widest);
             text-transform: uppercase;
-            color: var(--primary-gold);
+            color: var(--gold);
             margin-bottom: 1rem;
             display: block;
         }
@@ -286,7 +301,7 @@
             display: inline-block;
             padding: 1rem 2.4rem;
             background: var(--primary-gold);
-            color: #171814;
+            color: #111111;
             font-family: var(--font-body);
             font-weight: var(--font-weight-body-bold);
             font-size: 0.75rem;
@@ -329,7 +344,7 @@
             display: inline-block;
             padding: 1rem 2.8rem;
             background: var(--primary-gold);
-            color: #171814;
+            color: #111111;
             font-family: var(--font-body);
             font-weight: var(--font-weight-body-bold);
             font-size: 0.75rem;
@@ -500,9 +515,17 @@
             color: var(--text-primary);
         }
 
+        .navbar:not(.scrolled) .nav-links a {
+            color: #FFFFFF;
+        }
+
+        .navbar:not(.scrolled) .nav-links a:hover {
+            color: var(--primary-gold);
+        }
+
         .nav-cta {
             background: var(--primary-gold);
-            color: #171814 !important;
+            color: #111111 !important;
             padding: 0.6rem 1.4rem;
             border-radius: 0;
             font-weight: var(--font-weight-body-bold) !important;
@@ -533,6 +556,10 @@
             background: var(--text-primary);
             transition: all var(--transition-fast);
             transform-origin: center;
+        }
+
+        .navbar:not(.scrolled) .hamburger span {
+            background: #FFFFFF;
         }
 
         .hamburger.active span:nth-child(1) {
@@ -619,7 +646,7 @@
         }
 
         .hero-bg::after {
-            content: '📸 HERO BACKGROUND IMAGE';
+            content: '';
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -657,7 +684,7 @@
             font-size: 0.7rem;
             letter-spacing: var(--letter-spacing-widest);
             text-transform: uppercase;
-            color: var(--primary-gold);
+            color: var(--gold);
             margin-bottom: 1.5rem;
             opacity: 0.8;
         }
@@ -674,6 +701,13 @@
 
         .hero-title .highlight {
             color: var(--primary-gold);
+        }
+
+        .hero-title,
+        .hero-sub,
+        .hero-scroll,
+        .hero .btn-outline {
+            color: #FFFFFF;
         }
 
         .hero-sub {
@@ -715,6 +749,11 @@
 
         .hero-scroll .arrow {
             font-size: 1.2rem;
+        }
+
+        .hero-sub,
+        .hero-scroll {
+            color: #FFFFFF;
         }
 
         @keyframes bounceDown {
@@ -791,6 +830,7 @@
         .destinations {
             padding: 7rem 2rem;
             background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
             transition: background var(--transition-medium);
         }
 
@@ -821,7 +861,7 @@
             font-family: var(--font-heading);
             font-weight: var(--font-weight-heading-bold);
             font-size: 1.6rem;
-            color: var(--primary-gold);
+            color: var(--olive);
             margin-bottom: 1.6rem;
             letter-spacing: var(--letter-spacing-normal);
             position: relative;
@@ -835,7 +875,7 @@
             left: 0;
             width: 60px;
             height: 2px;
-            background: var(--primary-gold);
+            background: var(--gold);
             opacity: 0.4;
         }
 
@@ -896,7 +936,7 @@
             font-size: 0.6rem;
             letter-spacing: var(--letter-spacing-wider);
             text-transform: uppercase;
-            color: var(--primary-gold);
+            color: var(--gold);
             background: rgba(23, 24, 20, 0.6);
             padding: 0.3rem 0.8rem;
             display: inline-block;
@@ -919,7 +959,7 @@
             font-family: var(--font-heading);
             font-weight: var(--font-weight-heading-light);
             font-style: italic;
-            color: var(--primary-gold);
+            color: #FFFFFF;
             font-size: 0.95rem;
             margin-bottom: 0.4rem;
             letter-spacing: var(--letter-spacing-normal);
@@ -929,7 +969,7 @@
             font-family: var(--font-body);
             font-weight: var(--font-weight-body-regular);
             font-size: 0.85rem;
-            color: rgba(244, 240, 231, 0.6);
+            color: rgba(255, 255, 255, 0.78);
             line-height: var(--line-height-relaxed);
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -1140,6 +1180,26 @@
             letter-spacing: var(--letter-spacing-normal);
         }
 
+        .tour-modal-body .itinerary-item .meal-plan {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 0.9rem;
+            padding: 0.55rem 0.8rem;
+            background: var(--primary-gold);
+            color: #111111;
+            font-family: var(--font-body);
+            font-weight: var(--font-weight-body-bold);
+            font-size: 0.7rem;
+            letter-spacing: var(--letter-spacing-wide);
+            line-height: 1.2;
+            text-transform: uppercase;
+            border-left: 4px solid var(--primary-gold-dark);
+        }
+
+        .tour-modal-body .itinerary-item .meal-plan strong {
+            margin-right: 0.35rem;
+        }
+
         .tour-modal-body .included-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1251,7 +1311,7 @@
             inset: 0;
             background: 
                 linear-gradient(135deg, var(--bg-image-overlay) 0%, var(--overlay-light) 100%),
-                url('Assest/culturee.webp') center/cover no-repeat;
+                url('Assest/culture.webp') center/cover no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -1259,7 +1319,7 @@
         }
 
         .tailor-made::after {
-            content: '📸 TAILOR-MADE BACKGROUND IMAGE';
+            content: '';
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -1292,6 +1352,12 @@
 
         .tailor-made-content .section-title .highlight {
             color: var(--primary-gold);
+        }
+
+        .tailor-made-content .section-title,
+        .tailor-made-content .sub,
+        .tailor-made-content .tailor-options span {
+            color: #FFFFFF;
         }
 
         .tailor-made-content .sub {
@@ -1423,6 +1489,7 @@
         .guide {
             padding: 7rem 2rem;
             background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
             transition: background var(--transition-medium);
         }
 
@@ -1541,6 +1608,7 @@
         .testimonials {
             padding: 7rem 2rem;
             background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
             transition: background var(--transition-medium);
         }
 
@@ -1605,7 +1673,7 @@
         }
 
         .testimonial-card .stars {
-            color: var(--primary-gold);
+            color: var(--gold);
             font-size: 1.2rem;
             letter-spacing: 4px;
             margin-bottom: 1rem;
@@ -1690,7 +1758,8 @@
            ============================================ */
         .planner {
             padding: 7rem 2rem;
-            background: var(--bg-secondary);
+            background: var(--bg-secondary) linear-gradient(135deg, rgba(232, 117, 26, 0.06), transparent 45%);
+            border-top: 1px solid var(--border-color);
             transition: background var(--transition-medium);
         }
 
@@ -1818,6 +1887,7 @@
             justify-content: center;
             text-align: center;
             overflow: hidden;
+            background: var(--bg-secondary);
         }
 
         .final-cta::before {
@@ -1834,7 +1904,7 @@
         }
 
         .final-cta::after {
-            content: '📸 FINAL CTA BACKGROUND IMAGE';
+            content: '';
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -1867,6 +1937,11 @@
 
         .final-cta-content .section-title .highlight {
             color: var(--primary-gold);
+        }
+
+        .final-cta-content .section-title,
+        .final-cta-content .sub {
+            color: #FFFFFF;
         }
 
         .final-cta-content .sub {
@@ -2349,7 +2424,7 @@
 
                         <article class="dest-card" data-tour="rift-valley">
                             <div class="image-placeholder">
-                                <img src="Assest/hyna.webp" alt="Rift Valley lake" loading="lazy" />
+                                <img src="Assest/flamingo.webp" alt="Rift Valley lake" loading="lazy" />
                                 <span class="placeholder-label"></span>
                             </div>
                             <div class="dest-card-overlay">
@@ -2629,7 +2704,7 @@
                     </div>
                     <div class="ig-item">
                         <div class="image-placeholder">
-                            <img src="Assest/hyna.webp" alt="African safari" loading="lazy" />
+                                <img src="Assest/flamingo.webp" alt="Flamingos at a Rift Valley lake" loading="lazy" />
                             <span class="placeholder-label"></span>
                         </div>
                     </div>
@@ -2637,7 +2712,7 @@
 
                 <div class="instagram-footer">
                     <div class="handle">@onyxnomad_expeditions</div>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="btn-arrow">Follow the journey</a>
+                    <a href="https://www.instagram.com/onyxnomad" target="_blank" rel="noopener" class="btn-arrow">Follow the journey</a>
                 </div>
             </div>
         </section>
@@ -2864,7 +2939,7 @@
     <script>
         // ========================= THEME TOGGLE =========================
         const themeToggle = document.getElementById('themeToggle');
-        let currentTheme = localStorage.getItem('theme') || 'dark';
+        let currentTheme = localStorage.getItem('theme') || 'light';
 
         if (currentTheme === 'light') {
             document.documentElement.setAttribute('data-theme', 'light');
@@ -2960,9 +3035,9 @@
                     'Expert local guides with deep knowledge'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Arrive in Nairobi and transfer to the Maasai Mara. Afternoon game drive in the reserve  in search of the Big Five and other wildlife,return to the camp in the evening for dinner and overnight stay.' },
-                    { day: 'Day 2', desc: 'Full dayDay 2: Full day in Maasai mara. Today’s itinerary is flexible and can be discussed with your guide depending on your preferences.After an early breakfast, depart for a full-day game drive at around 7:50 AM with packed lunch. Continue exploring the Mara’s vast plains with excellent opportunities to spot the Big Five and other wildlife. You may visit the Mara River, particularly during the Great Migration season.OrYou can either return to the camp in the afternoon for lunch and relax, or opt to have both breakfast and lunch as picnic meals inside the park, allowing you to spend more time exploring the wilderness before returning to camp later in the evening.Meal Plan:FB (Breakfast, Lunch & Dinner)},' },
-                    { day: 'Day 3', desc: 'Day 3; Maasai mara to Nairobi.After breakfast, depart from the Maasai Mara for Nairobi, enjoying the scenic landscapes along the way. If time permits, you may have an optional visit to a Maasai village for an authentic cultural experience. Continue to Nairobi for drop-off at your residence or airport,marking the end of your safari adventure.Meal Plan: (Breakfast)}},' }
+                    { day: 'Day 1: NAIROBI TO MAASAI MARA.', desc: 'Early morning pick-up from your Nairobi hotel or airport and depart for the Maasai Mara, with a scenic stop along the Great Rift Valley. Arrive in time for lunch, followed by an exciting afternoon game drive in search of the Big Five and other wildlife. Return to camp in the evening for dinner and overnight.Meal Plan: (Lunch & Dinner ' },
+                    { day: 'Day 2: FULL DAY IN MAASAI MARA', desc: 'Full dayDay 2: Full day in Maasai mara. Today’s itinerary is flexible and can be discussed with your guide depending on your preferences.After an early breakfast, depart for a full-day game drive at around 7:50 AM with packed lunch. Continue exploring the Mara’s vast plains with excellent opportunities to spot the Big Five and other wildlife. You may visit the Mara River, particularly during the Great Migration season.OrYou can either return to the camp in the afternoon for lunch and relax, or opt to have both breakfast and lunch as picnic meals inside the park, allowing you to spend more time exploring the wilderness before returning to camp later in the evening.Meal Plan:FB (Breakfast, Lunch & Dinner)},' },
+                    { day: 'Day 3:MAASAI MARA TO NAIROBI', desc:    'After breakfast, depart from the Maasai Mara for Nairobi, enjoying the scenic landscapes along the way. If time permits, you may have an optional visit to a Maasai village for an authentic cultural experience. Continue to Nairobi for drop-off at your residence or airport,marking the end of your safari adventure.Meal Plan: (Breakfast)}},' }
                 ],
                 included: [
                     'Accommodation as specified',
@@ -2973,10 +3048,10 @@
                 ],
                 excluded: [
                     'International flights',
-                    'Travel insurance',
+                    'Entrance to the Maasai village - USD 20 per person',
                     'Personal expenses and tips',
                     'Alcoholic drinks',
-                    'Optional activities not listed',
+                    'Optional activities not listed (balloon ride)',
                     'personal medical expenses insurance',
                     'extra activities not listed in the itinerary'
                 ],
@@ -3007,24 +3082,22 @@
                     'Observation of over 400 bird species'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: `Day 1- Nairobi to Amboseli National Park.
+                    { day: 'DAY 1:NAIROBI TO AMBOSELI', desc: `National Park.
 Depart Nairobi in the morning and travel towards Amboseli National Park. Arrive in time for lunch, followed by an afternoon game drive through the park. Keep an eye out for the famous Amboseli elephants and, weather permitting, enjoy your first views of Mount Kilimanjaro before returning for the evening.
-Meal plan: Lunch & dinner.` },
-                    { day: 'Day 2', desc: `After breakfast, set out for a full day exploring Amboseli. Take in the open plains, swamps and wildlife-rich areas as you search for elephants, lions, giraffes, zebras, buffaloes and other residents of the park. Enjoy a picnic lunch in the wilderness before continuing your exploration and returning in the evening.
+Meal plan:Lunch& dinner` },
+                    { day: 'DAY 2:FULL-DAY AMBOSELI', desc: `After breakfast, set out for a full day exploring Amboseli. Take in the open plains, swamps and wildlife-rich areas as you search for elephants, lions, giraffes, zebras, buffaloes and other residents of the park. Enjoy a picnic lunch in the wilderness before continuing your exploration and returning in the evening.
 Meal plan: FB (Full board).` },
-                    { day: 'Day 3', desc: `Enjoy an early morning game drive, when the park is coming alive and Kilimanjaro may offer its clearest views. Return for breakfast before departing Amboseli and heading back to Nairobi, carrying with you memories of the giants beneath Kilimanjaro.
-Meal plan: Breakfast.` }
+                    { day: 'DAY 3:AMBOSELI TO NAIROBI', desc: `Enjoy an early morning game drive, when the park is coming alive and Kilimanjaro may offer its clearest views. Return for breakfast before departing Amboseli and heading back to Nairobi, carrying with you memories of the giants beneath Kilimanjaro. 
+Meal plan: Breakfast` }
                 ],
                 included: [
-                    'Accommodation for 7 nights',
+                    'meet and greet services',
                     'Meals as stipulated in the itinerary',
                     'Private safari vehicle with a professional English-speaking safari guide/driver',
                     'All scheduled game drives in Maasai Mara and Amboseli',
-                    'Park entry fees for Maasai Mara and Amboseli',
-                    'Bottled drinking water during the expedition',
-                    'All road transfers between destinations as outlined in the itinerary',
                     'Airport/hotel pickup and drop-off',
                     'All applicable government taxes and service charges'
+                    
                 ],
                 excluded: [
                     'International flights',
@@ -3034,7 +3107,6 @@ Meal plan: Breakfast.` }
                     'Drinks and beverages other than drinking water',
                     'Tips and gratuities',
                     'Optional activities not mentioned in the itinerary',
-                    'Maasai cultural experiences, if requested',
                     'Any services not specifically mentioned under What’s Included'
                 ],
                 notes: 'Known for its elephant population. Best photography in the morning when Kilimanjaro is clear.',
@@ -3055,7 +3127,7 @@ Meal plan: Breakfast.` }
                 title: 'Rift Valley Wildlife & Nature Expedition',
                 duration: '3 Days / 2 Nights',
                 location: 'Lake Nakuru & Lake Naivasha, Kenya',
-                image: 'Assest/hyna.webp',
+                image: 'Assest/flamingo.webp',
                 intro: 'Explore the stunning Rift Valley — a region of dramatic landscapes, great lakes, rhinos, flamingos and diverse wildlife.',
                 highlights: [
                     'Rhino sightings in Lake Nakuru National Park',
@@ -3065,30 +3137,39 @@ Meal plan: Breakfast.` }
                     'Scenic viewpoints across the Rift Valley'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Drive from Nairobi to Lake Nakuru. Afternoon game drive exploring the park.' },
-                    { day: 'Day 2', desc: 'Morning game drive in Lake Nakuru, then transfer to Lake Naivasha for a boat safari.' },
-                    { day: 'Day 3', desc: 'Morning visit to Crescent Island or a sanctuary. Return to Nairobi.' }
+                    { day: 'DAY 1 NAIROBI-LAKE NAIVASHA', desc: 'Depart Nairobi in the morning and travel through the scenic Great Rift Valley to Lake Naivasha. Enjoy a boat ride on the lake, followed by a guided walking experience on Crescent Island, where you may encounter giraffes, zebras, antelopes and a variety of birdlife. Later, check in at your accommodation for dinner and overnight.Meal Plan: Lunch & DinnerOvernight: Crater lake tented camp' },
+                    { day: 'DAY 2 LAKE NAIVASHA-LAKE NAKURU NATIONAL PARK', desc: 'After breakfast, depart for Lake Nakuru National Park for a full-day game drive. Explore the park in search of rhinos, lions, giraffes, zebras, buffaloes and other wildlife, with a picnic lunch during the day. Later, proceed to your accommodation for dinner and overnight.Meal Plan: Breakfast, Lunch & Dinner .Overnight: Ziwa Bush lodge ' },
+                    { day: 'DAY 3 NAKURU-NAIROBI', desc: 'Enjoy breakfast before checking out and driving back to Nairobi. Arrive around midday, with an optional Nairobi activity depending on your departure schedule.Meal Plan: Breakfast.End of Expedition – Nairobi' }
                 ],
                 included: [
-                    'Accommodation in lodges',
-                    'All meals',
-                    'Game drives and boat safari',
-                    'Park fees',
-                    'Bottled water'
+                    'Private transportation in a safari vehicle',
+                    'Services of a professional English-speaking driver-guide',
+                    'Meals as indicated in the itinerary',
+                    'Lake Naivasha boat ride',
+                    'Crescent Island walking safari',
+                    'Lake Nakuru National Park entry fees',
+                    'full-day game drive in lake Nakuru National park',
+                    'Bottled drinking water during safari',
+                    'full-day game drive in Lake Nakuru National park',
+                    'All applicable government taxes and services charges',
+
+
                 ],
                 excluded: [
-                    'International flights',
+                    'International flights and domestic flights',
                     'Travel insurance',
-                    'Personal expenses and tips',
-                    'Alcoholic beverages'
+                    'Personal expenses and souvenirs',
+                    'Alcoholic beverages and soft drinks',
+                    'Optional activities not mentioned in the itinerary',
+                    'Anything not specifically mentioned under "What’s Included"',
                 ],
-                notes: 'Great for bird lovers and families. Easy accessibility from Nairobi.',
+                notes: 'Wildlife & Nature: Explore the diverse landscapes of the Great Rift Valley, with opportunities to encounter rhinos, giraffes, zebras, buffaloes, hippos and abundant birdlife.',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
                         'Wildlife Experience: The Rift Valley is home to diverse wildlife including rhinos, flamingos, hippos and over 400 bird species.',
-                        'Lake Views: The best views of the lakes and wildlife are typically enjoyed during morning and late afternoon game drives.',
-                        'Game Drives & Boat Safaris: Your game drives and boat safaris are planned to give you ample time to explore the region\'s wildlife and landscapes.',
+                        'GAME VIEWING: Enjoy game drives at Lake Nakuru National Park and discover the park’s diverse habitats and wildlife.',
+                        'LAKE NAIVASHA BOAT RIDE: Cruise across the lake and experience its calm waters, scenic surroundings and rich birdlife, with opportunities to see hippos along the shoreline.',
                         'Best Time to Visit: The Rift Valley is a year-round destination, with each season offering its own unique scenery and wildlife experience.',
                         'What to Bring: Comfortable clothing, a hat, sunscreen, sunglasses, binoculars, a camera and a light jacket for cool mornings.',
                         'Customisation: The expedition can be tailored to suit your preferred travel style, activities and travel dates.',
@@ -3110,45 +3191,58 @@ Meal plan: Breakfast.` }
                     'Hot air balloon safari (optional)'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Arrive Nairobi. Transfer to the Maasai Mara for an afternoon game drive.' },
-                    { day: 'Day 2', desc: 'Full day in the Maasai Mara with morning and afternoon game drives.' },
-                    { day: 'Day 3', desc: 'Morning game drive in the Mara. Afternoon flight to the Rift Valley.' },
-                    { day: 'Day 4', desc: 'Explore Lake Nakuru National Park. Search for rhinos and flamingos.' },
-                    { day: 'Day 5', desc: 'Transfer to Amboseli. Afternoon game drive with views of Kilimanjaro.' },
-                    { day: 'Day 6', desc: 'Full day exploring Amboseli and its elephant herds.' },
-                    { day: 'Day 7', desc: 'Morning game drive in Amboseli, then return to Nairobi.' },
-                    { day: 'Day 8', desc: 'Depart from Nairobi or extend your stay.' }
+                    { day: 'DAY 1 :NAIROBI TO MAASAI MARA ', desc: 'Depart Nairobi in the morning and journey towards the Maasai Mara, passing through the spectacular landscapes of the Great Rift Valley. Enjoy scenic views along the way before continuing to the Maasai Mara. Arrive in time for lunch, followed by an afternoon game drive to begin your wildlife experience.Return to the camp for dinner and overnight stay.Meal plan: LD(lunch &dinner)Accommodation: Masai heritage eco camp' },
+                    { day: 'DAY 2: FULL-DAY MAASAI MARA EXPEDITION', desc: 'Spend the day exploring the Maasai Mara on game drives. Discover the open savannah and its incredible wildlife, with a picnic lunch enjoyed in the reserve before continuing the expedition. Return to your accommodation in the evening for dinner and a relaxing overnight stay. Meal plan: FB. Accommodation: Maasai Heritage Eco Camp' },
+                    { day: 'DAY 3: MAASAI MARA TO NAIROBI', desc: 'After breakfast, depart Maasai Mara and travel back to Nairobi, taking in more of Kenya’s beautiful landscapes along the way. If time permits, you can choose to visit the Maasai village community. Upon arrival, explore some of Nairobi’s most iconic attractions, including the Giraffe Centre, Karen Blixen Museum and Nairobi National Museum. Later, check in at your Nairobi hotel and enjoy a relaxing evening. Meal plan: FB. Accommodation: Kozi Suites' },
+                    { day: 'DAY 4: NAIROBI TO AMBOSELI', desc: 'After breakfast, depart Nairobi and travel towards Amboseli National Park. Along the way, enjoy the changing landscapes as you leave the city behind and continue towards the foothills of Mount Kilimanjaro. Arrive in time for lunch, followed by an afternoon game drive with views of Mount Kilimanjaro, weather permitting. Meal plan: FB. Accommodation: Sentrim Amboseli Camp' },
+                    { day: 'DAY 5: FULL-DAY EXPEDITION', desc: 'Spend the day exploring Amboseli, discovering its famous elephant herds, diverse wildlife and spectacular landscapes beneath Mount Kilimanjaro. Enjoy a full-day game-viewing experience across the park, a picnic lunch and more exploration before returning to your accommodation in the evening. Meal plan: FB. Accommodation: Sentrim Amboseli Camp' },
+                    { day: 'DAY 6: AMBOSELI TO DIANI BEACH', desc:'After breakfast, depart Amboseli and travel towards Kenya’s beautiful coast. As the landscape changes from savannah to the coastal region, continue to Diani Beach. Upon arrival, settle into your beach stay and spend the rest of the day relaxing by the Indian Ocean. Meal plan: FB. Accommodation: Safari Beach Hotel' },
+                    { day: 'DAY 7: DIANI BEACH LEISURE DAY', desc: 'Enjoy a full day at the coast. Relax on the white sandy beaches, swim in the warm Indian Ocean or choose from optional coastal activities. Take time to enjoy the tropical surroundings and the relaxed atmosphere of Diani. Meal plan: FB. Accommodation: Safari Beach Hotel' },
+                    { day: 'DAY 8 :DIANI TO NAIROBI', desc: 'Enjoy your final morning in Diani before checking out and proceeding with your onward journey or airport transfer, bringing your Kenya Safari & Beach Escape to a memorable close.Meal: Breakfast' }
                 ],
                 included: [
-                    'Accommodation in premium safari lodges and camps',
-                    'All meals throughout the safari',
-                    'Game drives with expert guides',
-                    'Park fees',
-                    'Bottled water during game drives'
+                    'Accommodation for 7 nights',
+                    'meals as stipulated in the itinerary',
+                    'Private safari vehicle with a professional English-speaking safari guide/driver',
+                    'Park entry fees( Maasai mara & Amboseli)',
+                    'Bottled water during game drives',
+                    'All scheduled game drives in Maasai Mara and Amboseli',
+                    'All road transfers between destinations as outlined in the itinerary',
+                    'Airport/hotel pickup and drop-off',
+                    'All applicable government taxes and service charges'
                 ],
                 excluded: [
                     'International flights',
-                    'Travel insurance',
+                    'Travel and medical insurance',
                     'Personal expenses and tips',
                     'Alcoholic beverages',
-                    'Optional activities'
+                    'Drinks and beverages other than drinking water',
+                    'Visa and travel documentation fees',
+                    'Maasai cultural experiences, if requested',
+                    'Any services not specifically mentioned under “What’s Included”',
+                    'Optional activities not mentioned in the itinerary',
                 ],
                 notes: 'A comprehensive safari for first-timers and experienced travellers alike. Customizable.',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
-                        'Wildlife Experience: This expedition covers Kenya\'s premier wildlife destinations, offering unparalleled opportunities to see the Big Five and more.',
-                        'Game Drives: Daily game drives are carefully planned to maximize wildlife viewing opportunities across different ecosystems.',
-                        'Best Time to Visit: Year-round destination, with the Great Migration in the Mara typically from July to October.',
+                        'Wildlife Experience: Get up close to Kenya’s incredible wildlife and landscapes — from the open savannahs of the Maasai Mara to the elephant-filled plains of Amboseli..',
+                        'Great Rift Valley :Enjoy breathtaking views of the Great Rift Valley along the way, with plenty of opportunities to stop, stretch and capture the scenery.',
+                        'Diani Beach: Slow things down on the Kenyan coast. Relax on the white sandy beaches, swim in the Indian Ocean or choose from a range of optional coastal activities',
+                        'Best Time to Visit: kenya is a year-round destination. Every season brings its own wildlife encounters, beautiful landscapes and memorable coastal experiences.',
+                        'Maasai Mara : Head out on exciting game drives in search of lions, elephants, buffaloes, giraffes, zebras, cheetahs and other incredible wildlife',
                         'What to Bring: Comfortable clothing, a hat, sunscreen, sunglasses, binoculars, a camera and layers for cool mornings.',
+                        'Nairobi Heritage :Discover Nairobi beyond the safari with visits to iconic attractions such as the Giraffe Centre, Karen Blixen Museum and Nairobi National Museum',
                         'Customisation: The expedition can be tailored to suit your preferred travel style, activities and travel dates.',
-                        'Booking: Advance booking is recommended to secure your preferred dates and arrangements.'
+                        'Booking: Advance booking is recommended to secure your preferred dates and arrangements.',
+                        'Meals and Drinks : meals are provided according to your selected meal plan. Bottled drinking water is included during the expedition, while other drinks and beverages are at your own expense',
+                        'Amboseli and Kilimanjaro:Witness Amboseli’s famous elephant herds with the magnificent Mount Kilimanjaro as your backdrop — weather permitting'
                     ]
                 }
             },
             'northern-circuit': {
                 title: 'The Grand Northern Circuit',
-                duration: '7 Days / 6 Nights',
+                duration: '11days',
                 location: 'Samburu, Shaba, Marsabit',
                 image: 'Assest/giraffe.webp',
                 intro: 'Venture off the beaten path to Kenya\'s wild north — a land of rare wildlife, unique landscapes and rich cultural heritage.',
@@ -3160,36 +3254,52 @@ Meal plan: Breakfast.` }
                     'Remote and uncrowded safari experience'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Fly from Nairobi to Samburu. Afternoon game drive in Samburu National Reserve.' },
-                    { day: 'Day 2', desc: 'Full day exploring Samburu and Shaba, searching for the Special Five.' },
-                    { day: 'Day 3', desc: 'Drive north to the Marsabit region, experiencing changing landscapes.' },
-                    { day: 'Day 4', desc: 'Explore the culture of the local communities and the natural beauty of the north.' },
-                    { day: 'Day 5', desc: 'Game drives and cultural encounters in the northern wilderness.' },
-                    { day: 'Day 6', desc: 'Return journey to Samburu. Enjoy the landscapes one last time.' },
-                    { day: 'Day 7', desc: 'Morning game drive then fly back to Nairobi.' }
+                    { day: 'DAY 1 :NAIROBI TO MASAAI MARA', desc: 'Depart Nairobi in the morning and journey towards the Maasai Mara, passing through the scenic landscapes of the Great Rift Valley. Continue towards the Mara and arrive in time for lunch, followed by an afternoon game drive to begin your wildlife experience.Accommodation: Masai Heritage Eco CampMeal Plan: Full Board (FB' },
+                    { day: 'DAY 2: FULL-DAY MAASAI MARA EXPEDITION', desc: 'Spend the day exploring the Maasai Mara on game drives. Discover the open savannah and its incredible wildlife, with a picnic lunch enjoyed in the reserve before continuing your exploration. Return to your accommodation in the evening. Accommodation: Maasai Heritage Eco Camp. Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 3 :MASAAI MARA TO LAKE NAKURU', desc: 'After breakfast, depart Maasai Mara and travel towards Lake Nakuru, enjoying the changing landscapes of the Great Rift Valley along the way. Arrive in the Lake Nakuru area, check in and enjoy the rest of the day at leisure.Accommodation: Maili Saba CampMeal Plan: Full Board (FB' },
+                    { day: 'DAY 4 :LAKE NAKURU TO LAKE NAIVASHA ', desc: 'After breakfast, depart Lake Nakuru and continue towards Lake Naivasha, enjoying the beautiful landscapes of the Great Rift Valley along the way.Upon arrival in Naivasha, enjoy a scenic boat ride across the lake, with opportunities to see hippos and abundant birdlife. You may also choose to enjoy a complimentary guided walking experience at Crescent Island, offering a unique opportunity to experience wildlife on foot while taking in the beautiful views of Lake Naivasha.Later, check in at your accommodation and enjoy a relaxing evening by the lake.Accommodation: Eseriani The Resort Meal Plan: Half Board (HB) — Breakfast & Dinner.' },
+                    { day: 'Day 5 :LAKE NAIVASHA TO AMBOSELI', desc: 'After breakfast, depart Lake Naivasha and continue your journey towards Amboseli National Park. Enjoy the changing scenery as you travel from the Great Rift Valley towards the foothills of Mount Kilimanjaro.Arrive in Amboseli, check in and enjoy the rest of the day at leisure.Accommodation: Sentrim Amboseli Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 6: FULL-DAY AMBOSELI EXPEDITION', desc: 'Spend the day exploring Amboseli on game drives, with opportunities to see its famous elephant herds and other wildlife. Take in the beautiful open plains, wetlands and spectacular views of Mount Kilimanjaro, weather permitting. Accommodation: Sentrim Amboseli. Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 7 :AMBOSELI TO TSAVO', desc: 'After breakfast, depart Amboseli and journey towards Tsavo National Park. Arrive in time for lunch, followed by an afternoon game drive as you begin exploring one of Kenya’s most remarkable wilderness areas.Accommodation: Manyatta Camp Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 8 :FULL-DAY TSAVO',desc:'Tsavo on game drives. Discover the park’s vast landscapes and diverse wildlife, with opportunities to encounter elephants, lions, giraffes, zebras, buffaloes and other wildlife.Enjoy a picnic lunch in the wilderness before continuing your expedition and returning to your accommodation in the evening.Accommodation: Manyatta Camp Meal Plan: Full Board (FB)'},
+                    { day: 'DAY 9 :TSAVO TO DIANI BEACH',desc:' After breakfast, leave the wilderness behind and travel towards the Kenyan coast. Continue to Diani Beach, where the landscape changes from open savannah to tropical coastal scenery.Arrive in Diani, settle into your accommodation and spend the rest of the day relaxing by the Indian Ocean.Accommodation: Safari Beach Hotel Meal Plan: Full Board (FB'},
+                    { day: 'DAY 10:DIANI BEACH LEISURE', desc: 'Enjoy a full day at the coast. Relax on the white sandy beaches, swim in the warm Indian Ocean or choose from a range of optional coastal activities.Take your time to enjoy the beauty and relaxed atmosphere of Diani.Accommodation: Safari Beach Hotel Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 11:DIANI BEACH AND DEPARTURE', desc: 'Enjoy your final morning by the Indian Ocean before checking out and proceeding with your onward journey or airport transfer, bringing your Ultimate Kenya Expedition to a memorable close.Meal Plan: Breakfast' },
+
                 ],
                 included: [
-                    'Accommodation in remote lodges and camps',
-                    'All meals',
-                    'Game drives and cultural experiences',
-                    'Park fees',
-                    'Bottled water'
+                    'Accommodation for nights as outlined in the itinerary ',
+                    'Meal plan as specified',
+                    'professional English-Speaking safari guide/driver',
+                    'Private safari vehicle for the duration of the expedition',
+                    'Game drives in Maasai Mara, Lake Nakuru, Amboseli and Tsavo',
+                    'Maasai Mara, Lake Nakuru, Amboseli and Tsavo park/reserve entry fees',
+                    'Lake Naivasha boat ride',
+                    'All road transfers between destinations as outlined in the itinerary',
+                    'Airport/hotel pickup and drop-off',
+                    'All applicable government taxes and service charges'
                 ],
                 excluded: [
                     'International flights',
-                    'Travel insurance',
+                    'Travel and medical insurance',
                     'Personal expenses and tips',
-                    'Alcoholic beverages'
+                    'Alcoholic beverages',
+                    'tips and gratuities',
+                    'Optional activities not mentioned in the itinerary',
+                    'Maasai cultural experiences & crescent island, if requested',
+                    'Any activities or services not specifically mentioned under “What’s Included”'
                 ],
-                notes: 'Best for adventurous travellers seeking a less crowded experience. Road conditions may vary.',
+                notes: 'This expedition is designed to show you the many sides of Kenya — from the endless savannahs of the Maasai Mara and the dramatic Great Rift Valley to the elephant-filled plains of Amboseli, the wild landscapes of Tsavo and the tropical shores of Diani',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
                         'Wildlife Experience: The northern circuit offers unique wildlife including the "Special Five" — reticulated giraffe, Grevy\'s zebra, Somali ostrich, gerenuk and beisa oryx.',
-                        'Game Drives: Your game drives are planned to give you ample time to explore the northern wilderness and its unique wildlife.',
+                        'THE GREAT RIFT VALLEY:As you travel between destinations, enjoy some of Kenya’s most striking scenery, including the sweeping escarpments and lakes that form part of the Great Rift Valley',
                         'Best Time to Visit: The northern circuit is accessible year-round, with wildlife viewing opportunities available throughout the year.',
                         'What to Bring: Comfortable clothing, a hat, sunscreen, sunglasses, binoculars, a camera and layers for cool mornings and evenings.',
                         'Customisation: The expedition can be tailored to suit your preferred travel style, activities and travel dates.',
+                        'YOUR EXEPEDITION,YOUR WAY: Activities and arrangements can be adjusted where possible to suit your interests, pace and travel style.', 
+                        'Travel Throughout the Year : Kenya is a year-round destination, with different seasons bringing their own scenery, wildlife moments and atmosphere',
                         'Booking: Advance booking is recommended to secure your preferred dates and arrangements.'
                     ]
                 }
@@ -3247,10 +3357,10 @@ Meal plan: Breakfast.` }
             },
             'giants-kenya': {
                 title: 'Giants of Kenya Expedition',
-                duration: '5 Days / 4 Nights',
+                duration: '7 Days ',
                 location: 'Amboseli, Tsavo, Nairobi',
                 image: 'Assest/closeleo.webp',
-                intro: 'A focused safari dedicated to Kenya\'s magnificent megafauna — elephants, rhinos and the iconic wildlife of the savannah.',
+                intro: 'Giants of Kenya is about taking your time, being present and enjoying the wild — one landscape and one unforgettable encounter at a time',
                 highlights: [
                     'Concentrated elephant viewing in Amboseli',
                     'Black and white rhino sightings',
@@ -3259,34 +3369,47 @@ Meal plan: Breakfast.` }
                     'Expert guides with wildlife focus'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Drive from Nairobi to Amboseli. Afternoon game drive.' },
-                    { day: 'Day 2', desc: 'Full day exploring Amboseli\'s elephant herds and wildlife.' },
-                    { day: 'Day 3', desc: 'Transfer to Tsavo. Afternoon game drive in Tsavo West.' },
-                    { day: 'Day 4', desc: 'Full day game drives in Tsavo looking for giants and other wildlife.' },
-                    { day: 'Day 5', desc: 'Morning game drive then return to Nairobi.' }
+                    { day: 'DAY 1:NAIROBI TO AMBOSELI', desc: 'Depart Nairobi in the morning and head south towards Amboseli National Park. Enjoy the changing scenery as you leave the city behind and approach the open plains of Amboseli.Arrive in time for lunch and settle into the lodge. Later in the afternoon, head out for your first game drive, with the chance to see elephants, giraffes, zebras, buffaloes and other wildlife. On a clear day, Mount Kilimanjaro creates a beautiful backdrop.Accommodation: Sentrim Amboseli Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 2 :FULL-DAY AMBOSELI EXPEDITION', desc: 'After breakfast, head into Amboseli for a full day of wildlife exploration.Spend the day exploring the parks open plains and wetlands, where large elephant herds are often seen moving across the landscape. Keep an eye out for giraffes, buffaloes, zebras, hippos, lions and the many bird species found around the wetlands.Enjoy a picnic lunch in the park before continuing the game drive into the afternoon.Return to the lodge in the evening for dinner and relaxation.Accommodation: Sentrim Amboseli Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 3 :AMBOSELI WILDERNESS EXPERIENCE', desc: 'Enjoy another day in Amboseli, with time for further wildlife exploration and photography.After breakfast, head out for a morning game drive, exploring different areas of the park and taking in the views of Mount Kilimanjaro when conditions are clear.Return to the lodge for lunch and some time to relax. Later, you can choose to visit a Masai cultural village later on,enjoy an afternoon game drive as the light softens across the plains and wildlife becomes more active.Accommodation: Sentrim Amboseli Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 4 :AMBOSELI TO TSAVO', desc: 'After breakfast, check out and depart Amboseli for Tsavo East National Park.Travel through the landscapes of southeastern Kenya before arriving at Tsavo East. After lunch, settle in before heading out for an afternoon game drive.Explore the parks distinctive red-earth landscapes and look out for elephants, buffaloes, giraffes, zebras, lions and other wildlife.Accommodation: Sentrim Tsavo Lodge Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 5 :FULL DAY TSAVO EAST EXPEDITION', desc: 'After breakfast, head into Tsavo East National Park for a full day of wildlife and wilderness exploration.Discover the park’s vast landscapes and look out for its famous dust-red elephants, along with lions, buffaloes, giraffes, hippos, crocodiles, leopards and other wildlife. Along the way, enjoy the scenic Galana River and views of the remarkable Yatta Plateau, one of Tsavo’s iconic natural features.Enjoy a picnic lunch in the park before continuing the game drive through the afternoon' },
+                    { day: 'DAY 6: TSAVO EAST TO NAIROBI', desc: 'Enjoy breakfast before checking out and beginning the journey back to Nairobi. Leave Tsavo East behind and travel through the changing landscapes of southeastern Kenya, with lunch en route before continuing to Nairobi. Depending on your departure time, there may be an opportunity for a short Nairobi experience or some leisure time before your transfer to the airport. Your Giants of Kenya expedition comes to an end after days spent among elephants, open plains and some of Kenya’s most remarkable wilderness landscapes. Meal Plan: Breakfast'},
+                  
                 ],
                 included: [
-                    'Accommodation in lodges',
+                    'Accommodation in lodges/hotel',
                     'All meals',
                     'Game drives with focus on wildlife',
-                    'Park fees',
-                    'Bottled water'
+                    'ALL Park fees and statutory',
+                    'Bottled water',
+                    'All transfers , to and from airport',
+                    'Game drives in a specially customised 4x4 jeep',
+                    'Full-board accommodation (drinks excluded)',
+                    'English speaking Driver/guide'
                 ],
                 excluded: [
                     'International flights',
-                    'Travel insurance',
-                    'Personal expenses and tips',
-                    'Alcoholic beverages'
+                    'medical and personal insurance',
+                    'Extras/optional activities like Balloon Ride.',
+                    'Drinks and beverages (except bottled drinking water',
+                    'Entrance to the Masai village- usd20 per person',
+                    'Tips and gratuities '
+
                 ],
-                notes: 'Perfect for wildlife photographers and enthusiasts. Year-round viewing.',
+                notes: 'Every game drive is different. Animals roam freely, so sightings cannot be guaranteed, but our guide will use local knowledge and experience to make the most of every opportunity.',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
                         'Wildlife Experience: This expedition focuses on Kenya\'s largest wildlife — elephants in Amboseli and rhinos in Tsavo.',
-                        'Game Drives: Your game drives are planned to give you ample time to explore the parks and experience their wildlife.',
+                        'Accommodation: Your accommodation is subject to availability and will be confirmed upon booking',
                         'Best Time to Visit: Year-round destination, with each season offering its own unique experience.',
                         'What to Bring: Comfortable clothing, a hat, sunscreen, sunglasses, binoculars and a camera with a good zoom lens.',
                         'Customisation: The expedition can be tailored to suit your preferred travel style, activities and travel dates.',
+                        'Meals:All meals are provided according to the itinerary. Please share any dietary requirements or allergies with us in advance',
+                        'Weather & Wildlife: Conditions can change during the day, and wildlife activity varies with weather, season and time of day. Flexibility allows us to enjoy the best of each moment',
+                        'Respect the Wilderness: Please follow your guides instructions, maintain a respectful distance from wildlife and help us keep these beautiful places clean and protected.',
+                        'A Journey to Remember: From elephants beneath Mount Kilimanjaro to the red-earth landscapes of Tsavo East, come ready to slow down, enjoy the scenery and experience Kenyas wild side at its best',
                         'Booking: Advance booking is recommended to secure your preferred dates and arrangements.'
                     ]
                 }
@@ -3305,34 +3428,44 @@ Meal plan: Breakfast.` }
                     'Perfect balance of adventure and relaxation'
                 ],
                 itinerary: [
-                    { day: 'Day 1', desc: 'Arrive Nairobi. Transfer to the Maasai Mara for an afternoon game drive.' },
-                    { day: 'Day 2', desc: 'Full day of game drives in the Maasai Mara.' },
-                    { day: 'Day 3', desc: 'Morning game drive. Afternoon flight to the coast.' },
-                    { day: 'Day 4', desc: 'Full day relaxing on the beach with optional water activities.' },
-                    { day: 'Day 5', desc: 'Explore the coast or enjoy water sports.' },
-                    { day: 'Day 6', desc: 'Visit coastal attractions or simply relax.' },
-                    { day: 'Day 7', desc: 'Return to Nairobi for departure.' }
+                    { day: 'DAY 1:NAIROBI NATIONAL PARK TO MAASAI MARA ', desc: 'Begin the expedition with an early morning game drive in Nairobi National Park, offering a unique opportunity to experience wildlife with Nairobis skyline in the background.After the game drive, continue towards the Maasai Mara, with lunch en route before proceeding to the reserve.Arrive later in the afternoon, check in to your accommodation and relax after the journey.Accommodation: Masai Heritage Eco Camp Meal Plan: Full Board (FB)' },
+                    { day: 'DAY 2:FULL-DAY MAASAI MARA EXPEDITION', desc: 'After breakfast, set out for a full day of exploring the Maasai Mara.Spend the day on game drives across the reserve, searching for lions, elephants, cheetahs, buffaloes, giraffes, zebras and other wildlife. Enjoy a picnic lunch in the reserve before continuing your exploration through the afternoon.Return to camp in the evening for dinner and relaxation.Accommodation: Masai Heritage Eco Camp Meal Plan: Full Board (FB) ' },
+                    { day: 'DAY 3:MAASAI MARA TO NAIROBI', desc: 'After breakfast, check out and enjoy a morning game drive in the Maasai Mara as you make the most of your final hours in the reserve.After the game drive, begin the journey towards Nairobi, with lunch en route. If time persists, you can choose to visit maasai village(complimentary)Continue to Nairobi and check in to your accommodation. Spend the evening at leisure and prepare for your journey to the coast the following day.Accommodation: Kozi suites.Meal Plan: Half Board (HB) Dinner & Breakfast ---.' },
+                    { day: 'DAY 4:NAIROBI TO DIANI BY SGR', desc: 'After breakfast, check out and transfer to the SGR station for your journey to Mombasa.Enjoy the scenic train journey as you travel from the highlands towards Kenyas tropical coast.Upon arrival in Mombasa, continue by road transfer to Diani Beach. Check in to your accommodation and spend the remainder of the day relaxing by the Indian Ocean.Accommodation: Safari beach hotel Meal Plan: Full board (FB).' },
+                    { day: 'DAY 5:DIANI BEACH & INDIAN OCEAN', desc: 'After breakfast, enjoy a full day at leisure in Diani.Relax on the white sandy beaches, swim in the warm waters of the Indian Ocean or simply enjoy the facilities at your accommodation.Optional marine and water activities can be arranged for guests who would like to experience more of the Kenyan coast.Accommodation: Safari beach hotel Meal Plan:Full Board (FB.' },
+                    { day: 'DAY 6:DIANI COASTAL EXPERIENCE', desc: 'Enjoy another day on the Kenyan coast.Take your time to relax, explore Diani or participate in an optional coastal excursion. Discover the areas beautiful beaches, marine environment and laid-back tropical atmosphere.Return to your accommodation in the evening for dinner and your final night by the Indian Ocean.Accommodation: Safari beach hotel Meal Plan: Full Board (FB)---.' },
+                    { day: 'DAY 7:DIANI TO MOMBASA / DEPARTURE', desc: 'Enjoy breakfast and some final time by the coast before checking out.Transfer to Mombasa Airport or the SGR station according to your onward travel arrangements.Your Across Kenya: Wildlife, Wilderness & Coast expedition comes to an end — from Nairobis urban wilderness, through the legendary Maasai Mara, to the white sands and warm waters of Diani. .' }
                 ],
                 included: [
-                    'Safari accommodation in the Mara',
-                    'Beach resort accommodation',
+                    'Accommodation  as per itinerary',
+                    'private safari transport and English speaking guide',
                     'All meals on safari, breakfast at the coast',
                     'Game drives and coastal activities',
-                    'Park fees',
-                    'Flights to the coast'
+                    'Park entrance fees',
+                    'Nairobi National Park & Maasai Mara game drives',
+                    'Hotel/Airport transfer',
+                    'Bottled drinking water during safari and transfer',
+                    'SGR Mombasa-Nairobi ticket',
+                    'Meals as indicated (FB/HB)'
                 ],
                 excluded: [
-                    'International flights',
-                    'Travel insurance',
+                    'International/Domestics flights',
+                    'visa and Travel insurance',
                     'Personal expenses and tips',
-                    'Alcoholic beverages'
+                    'Anything not specifically mentioned under Included'
                 ],
                 notes: 'The best of both worlds — ideal for couples and those seeking a balanced holiday.',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
-                        'Wildlife Experience: This itinerary combines a classic Maasai Mara safari with coastal relaxation.',
+                        'Wildlife Experience:   Every safari is unique. Wildlife sightings can never be guaranteed, but our experienced guide will use their local knowledge to give you the best opportunities for memorable encounters.',
+                        'Travel Light & Comfortably:Comfortable, lightweight clothing, walking shoes, sunscreen, sunglasses and a light jacket are recommended. Neutral and earthy colours are ideal for safari.',
+                        'Your Meals, Your Comfort :If you have any dietary requirements, allergies or special meal preferences, simply let us know in advance and we will be happy to make the necessary arrangements where possible',
                         'Game Drives: Your game drives in the Mara are planned to give you ample time to explore the reserve.',
+                        'Coast stay:Diani is your time to slow down, breathe and enjoy the Indian Ocean. Whether you prefer relaxing on the beach or adding an optional marine or coastal experience, there is room to make the coast your own.',
+                        'A scenic return by SGR: Your journey back from the coast to Nairobi is by SGR. Sit back, relax and enjoy the changing scenery as the coast gives way to the landscapes of inland Kenya. Train seats and schedules are subject to availability.',
+                        'Respecting the Places We Visit: We invite every guest to travel responsibly by respecting wildlife, local communities, conservation areas and the beautiful environments we are privileged to explore.',
+                        'Come With an Open Heart:  From the energy of Nairobi to the endless plains of the Maasai Mara and the turquoise waters of Diani, this expedition is about more than ticking destinations off a map. Come ready to explore, connect and create memories that stay with you long after you leave Kenya.',
                         'Best Time to Visit: Year-round destination, with the Mara offering great wildlife viewing throughout the year.',
                         'What to Bring: Safari clothing, a hat, sunscreen, sunglasses, binoculars, a camera and swimwear for the coast.',
                         'Customisation: The expedition can be tailored to suit your preferred travel style, activities and travel dates.',
@@ -3354,13 +3487,15 @@ Meal plan: Breakfast.` }
                     'Support community-driven initiatives'
                 ],
                 itinerary: [
-                    { day: 'Half-Day', desc: 'Meet your local guide and begin the walking tour through Kibera. Visit a local school, community centre, and see the vibrant local economy. Learn about the culture and daily life of the community.' }
+                    { day: 'Half-Day', desc: 'Kibera Through Local Eyes is a half-day experience that takes you beyond the usual Nairobi sightseeing and into the everyday life of one of the city’s most vibrant communities.Led by a local guide, walk through the neighbourhood, meet residents and small business owners, and hear personal stories about life, work, creativity and the community’s ongoing development.During the visit, guests may also have an opportunity to visit a local school, community centre, children’s home or health facility, depending on the day’s arrangements and the availability of the host organisation. These visits offer a chance to learn about local initiatives and the people working to make a difference in the community.Along the way, enjoy the opportunity to taste local Kenyan food — from everyday favourites to simple street dishes prepared by local vendors. Share food, conversations and experiences while discovering a side of Nairobi that many visitors never get to see.This is more than a tour. It is an opportunity to walk, listen, eat, connect and understand Kibera through the people who call it home' }
                 ],
                 included: [
                     'Local guide from the community',
-                    'Community visit fees',
+                    'All activities specifically mentioned in the itinerary',
                     'local food tasting (if available)',
-                    'Bottled water'
+                    'Bottled water',
+                    'Guided community walk',
+                    'Visits to community initiatives where available'
                 
                 ],
                 excluded: [
@@ -3369,6 +3504,7 @@ Meal plan: Breakfast.` }
                     'Tips and gratuities',
                     'donations to community projects (optional)',
                     'any activities not listed in the itinerary',
+                    ' additional food and drinks not included in the food tasting'
                 ],
                 notes: 'A respectful, community-led experience. Wear comfortable walking shoes.',
                 importantInfo: {
@@ -3379,8 +3515,10 @@ Meal plan: Breakfast.` }
                         'Best Time to Visit: Morning tours are recommended to experience the community at its most active.',
                         'What to Bring: Comfortable walking shoes, a hat, sunscreen, a camera (ask permission before photographing people), and an open mind.',
                         'Customisation: The tour can be tailored to your interests within the community.',
-                        'Booking: Advance booking is recommended to secure your preferred date and time.'
-                    ]
+                        'FOOD EXPERIENCE :The food tasting focuses on simple local Kenyan dishes and street food. Guests with allergies or dietary restrictions should inform us in advance',
+                        'A DIFFERENT SIDE OF NAIROBI: Kibera Through Local Eyes is designed to create genuine human connections and a better understanding of the community, rather than simply passing through as a visitor',
+                       ' A JOURNEY OF CONNECTION:Come ready to walk, listen, taste, learn and connect with the people who call Kibera home',
+                                            ]
                 }
             },
             'tea-coffee': {
@@ -3397,28 +3535,35 @@ Meal plan: Breakfast.` }
                     'Scenic drives through the highlands'
                 ],
                 itinerary: [
-                    { day: 'Full Day', desc: ' Step into the green highlands of Kenya and discover the journey behind two of the country’s most famous exports — tea and coffee.This full-day countryside expedition takes you to a working tea and coffee-growing region, where you’ll see how the crops are planted, cared for, harvested and prepared before making their way to your cup.Walk through lush plantations, learn from local farmers and guides, and get a closer look at the traditional and modern methods used in producing Kenyan tea and coffee.The day also offers time to enjoy the beautiful highland scenery, fresh air and slower pace of rural Kenya. Along the way, sample freshly prepared Kenyan tea and coffee and discover the flavours that have made them known around the world' }
+                    { day: 'Full Day', desc: ' A detailed full-day itinerary will be provided upon discussion and request, allowing the experience to be tailored to your interests, preferred pace and available time' }
                 ],
                 included: [
-                    'Transport from Nairobi',
-                    'Tea and coffee farm tours and tastings',
-                    'Local guide',
-                    'Bottled water'
+                    'private transport',
+                    'English-speaking guide/driver',
+                    'Guided plantation and farm walks',
+                    'Tea and coffee farm visits',
+                    'lunch',
+                    'Bottled  '
                 ],
                 excluded: [
                     'Personal expenses',
-                    'Tips',
-                    'Meals (can be arranged)'
+                    'Tips and gratuities',
+                    'Any item not specifically mentioned under included',
+                    'Alcoholic beverages',
+                    'Optional activities not mentioned under Included'
                 ],
-                notes: 'Great for foodies and those interested in Kenyan agriculture. Flexible timing.',
+                notes: 'THE HIGHLANDS ARE PART OF THE EXPERIENCE :Expect cool, fresh air, green landscapes and beautiful countryside views. The weather can be cooler and wetter than Nairobi, so bring a light jacke',
                 importantInfo: {
                     title: 'Important Information',
                     items: [
                         'Farm Experience: Learn about Kenya\'s world-class tea and coffee production directly from the source.',
-                        'Tastings: Enjoy freshly brewed Kenyan tea and coffee at the farms.',
+                        ' FROM FARM TO CUP :The experience focuses on understanding the journey of Kenyan tea and coffee — from planting and harvesting to processing and finally tasting the finished product.',
                         'Best Time to Visit: Year-round, with the harvest season offering additional insights into production.',
                         'What to Bring: Comfortable clothing, a hat, sunscreen, a camera and a light jacket for the highlands.',
+                        'FARM VISITS :The exact activities and demonstrations may vary depending on the season, farm operations and availability on the day',
                         'Customisation: The tour can be tailored to focus on either tea or coffee, or include both.',
+                        'RESPECT THE FARM:These are working farms and rural communities. Guests are encouraged to respect the farmers, crops, property and local way of life',
+                        'COME READY TO WALK:The farm visits involve walking through plantations and uneven ground. Comfortable walking shoes are recommended',
                         'Booking: Advance booking is recommended to secure your preferred date and farm visits.'
                     ]
                 }
@@ -3429,6 +3574,19 @@ Meal plan: Breakfast.` }
         const modal = document.getElementById('tourModal');
         const modalContent = document.getElementById('tourModalContent');
         const closeModalBtn = document.getElementById('closeModal');
+
+        function formatItineraryDescription(description) {
+            let mealPlan = '';
+            const cleanedDescription = description
+                .replace(/(?:Meal\s*plan|Meal)\s*:\s*(.*?)(?=(?:Accommodation|Overnight|Transfer)|$)/i, (_, plan) => {
+                    mealPlan = plan.replace(/[).]+$/, '').trim();
+                    return '';
+                })
+                .replace(/\s{2,}/g, ' ')
+                .trim();
+
+            return { cleanedDescription, mealPlan };
+        }
 
         function openTour(tourId) {
             const data = tourData[tourId];
@@ -3467,12 +3625,16 @@ Meal plan: Breakfast.` }
                     </ul>
 
                     <h3>Suggested Itinerary</h3>
-                    ${data.itinerary.map(item => `
-                        <div class="itinerary-item">
-                            <span class="day">${item.day}</span>
-                            <p class="desc">${item.desc}</p>
-                        </div>
-                    `).join('')}
+                    ${data.itinerary.map(item => {
+                        const itinerary = formatItineraryDescription(item.desc);
+                        return `
+                            <div class="itinerary-item">
+                                <span class="day">${item.day}</span>
+                                <p class="desc">${itinerary.cleanedDescription}</p>
+                                ${itinerary.mealPlan ? `<span class="meal-plan"><strong>Meal plan:</strong> ${itinerary.mealPlan}</span>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
 
                     <h3>What's Included</h3>
                     <ul>
